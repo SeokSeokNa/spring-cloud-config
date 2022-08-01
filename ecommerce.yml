@@ -1,6 +1,7 @@
 token:
   expiration_time: 86400000 #60 * 60 * 24 * 1000 (1일 계산)
-  secret: user_token
+  secret: ecommerce_user_token
 
 gateway:
- ip: 192.168.0.10  
+# ip: 192.168.0.10  #mac
+ ip: 192.168.0.107  #window
