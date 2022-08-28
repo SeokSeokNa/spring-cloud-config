@@ -1,6 +1,6 @@
-token:
-  expiration_time: 86400000 #60 * 60 * 24 * 1000 (1일 계산)
-  secret: my_token_default
+# token:
+#   expiration_time: 86400000 #60 * 60 * 24 * 1000 (1일 계산)
+#   secret: '{cipher}AQCo7V4x/s+Rzg9tqg0JxUgM0a94JReWjRNsnv5eS3fV33Cjg6MPy31P6JCVKPyPZ35QpiUAmTCw2BYhkyzjMYZOly1jnsEI5Dq/ZJFtUrCHY7+y8eyEXdCYziiub3gv/AYMaXababhXwXuiODuYyzm0zXwVsZrpM2vN877m683Xkj/sUoCz8YrE5M6yR2WuKMWMqczd9HoAGj62DxmcgwSu9admuuEWxU98aRbYxs3x8cE7pgrMWIf0K220miC6zcM4T1yJNLFFzzUTNxBodq6hkNtEs5olC96zfQ2DOJS+O6Kgh7hp4a6PWRGn5jrS3+bRxfMKjC+OecS5ORURy9MTnjfuL3VIWG7e7XRTTPoLeCOj6MernwsRa3ggtaEnzIVU21zArTqbbcV2l2EKbdwB'
 
 gateway:
 # ip: 192.168.0.10  #mac

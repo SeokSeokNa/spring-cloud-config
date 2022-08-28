@@ -1,0 +1,11 @@
+#해당 디렉토리(native-local-repo)에 있는 yml 파일들위에 상위로 application.yml이 있다.
+#/yml파일명/default 호출시 공통적으로 application.yml을 불러오기 때문에 공통적으로 모두 적용하고 싶은 값이 있다면 application.yml에 명시하면된다 (ex. token에 대한 key)
+token:
+  expiration_time: 86400000 #60 * 60 * 24 * 1000 (1일 계산)
+  secret: '{cipher}AQCpBL44XkMs4/jE/P8ZBoyDPuAbqkj8wzJeNKa3+0V1bwmbv7ImeNdbOvdcDw5wBnIQgwfdhRcuv2Daa/A3xPYPnkjovHk5VP81N97pAdc2i61FGVJQ5T4f0UoUbbWzZRRcJq3H5oYJAo5bGCmpgAM4IfQYSbxhQLNtUCUbp69lorqAit+CRmSjWHsuRB9HA9N7TjXlpkggmyDz1QjpJcYQXnvVqFn7nrXoGZ1tKTmUYpgEFCUsfVvUNokE62DTaszYKFizLGTsVr+atqfgrNhiRf2D4cPUyH4nKOuUGrupLwsI275U3Ju3j2bP+RIqY/W3WW/gebP1yG6dqEgI/rggXPVktajEJ+6skzRMlIbMKNGc8yBY+vDkqmU//c15GOUyp1vPG9yQ19wGOhVfXScO'
+  #{cipher} 를 앞에 붙히면 어플리케이션에게 암호화된 글자라는 의미를 전달하여 일반텍스트로 읽게하지 않는다.
+gateway:
+# ip: 192.168.0.10  #mac
+ ip: 192.168.0.107  #window
+ 
+ 

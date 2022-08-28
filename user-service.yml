@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb  
+    username: sa
+    password: '{cipher}AQBxenkeJ2Hro52LeJn5z/mgNYrRxa0OxG5Avlo/F95Ttz352ca7fbf9798NLbkAz8GbHYm7QfdzQ3CtU0FQ8COQt6NjaZsWAdu2of4x+0CkxGubMZd+Jke4Q6UZ2iWZVZN3fv6KXUPfeIon+CVxx+OQQ8oJd+rRwKJlEJCr/fOrWxpgvWgb+F4ENzScHHAmf5XmVwbC5Q4/Pm3wtuv+Q7jUhlc9m9WUGgESP0b1TlWZyAcjoCYudKWg0OcwwkMulp2pKyed7yqz9HyqoRoaG5MQsSwjQ1h2sdPzSm8Pw2irad4Ja67+wEZJA7UBCPe7q4hCCCeCTJmpcV23pq8+p2aNTAr1+D9oPQF8toMpcNzvLJBJj1s0gj8l3wwDQJQnWJA=' 
+    #{cipher} 를 앞에 붙히면 어플리케이션에게 암호화된 글자라는 의미를 전달하여 일반텍스트로 읽게하지 않는다.
+# token:
+#   expiration_time: 86400000 #60 * 60 * 24 * 1000 (1일 계산)
+#   secret: user_token_native_user_service
+
+gateway:
+# ip: 192.168.0.10  #mac
+ ip: 192.168.0.107  #window
+ 
+ 
+order_service:
+  #url: http://127.0.0.1:8000/order-service/%s/orders 
+  url: http://ORDER-SERVICE/order-service/%s/orders #eureka 서버에 등록되어진 인스턴스의 이름을 호스트 주소에 넣어 apiClient 서버를 거치지 않고 eureka 서버에 다이렉트로 요청한다.(@LoadBalanced 을 Restemple 객체에 달아야함)
+                                                    #api-gateway 서버를 거치지 않고 다이렉트로  eureka 서버로 요청되는지 확인하고 싶으면 요청시 api-gateway의 로그를 확인해보자
+  exception:
+    order_is_empty: There is no item.                                          
