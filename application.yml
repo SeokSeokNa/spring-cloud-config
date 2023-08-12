@@ -6,6 +6,7 @@ token:
   #{cipher} 를 앞에 붙히면 어플리케이션에게 암호화된 글자라는 의미를 전달하여 일반텍스트로 읽게하지 않는다.
 gateway:
 # ip: 192.168.0.10  #mac
- ip: 192.168.0.107  #window
+# ip: 192.168.0.107  #window
+ ip: 172.18.0.5  #docker container
  
  
